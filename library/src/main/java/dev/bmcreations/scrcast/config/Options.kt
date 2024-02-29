@@ -124,8 +124,8 @@ data class VideoConfig @JvmOverloads constructor(
      */
     val maxLengthSecs: Int = 0,
 
-    val audio_bitrate: Int = 64_000,
-    val audio_sample_rate: Int = 24_000
+    val audioBitrate: Int = 64_000,
+    val audioSampleRate: Int = 44_000
 ): Parcelable
 
 /**
