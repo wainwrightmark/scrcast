@@ -122,7 +122,10 @@ data class VideoConfig @JvmOverloads constructor(
      *
      * @see [MediaRecorder.setMaxDuration]
      */
-    val maxLengthSecs: Int = 0
+    val maxLengthSecs: Int = 0,
+
+    val audio_bitrate: Int = 64_000,
+    val audio_sample_rate: Int = 24_000
 ): Parcelable
 
 /**

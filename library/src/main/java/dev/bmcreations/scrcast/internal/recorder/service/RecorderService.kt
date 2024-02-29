@@ -115,6 +115,7 @@ class RecorderService : Service() {
         Log.d("scrcast", "createRecorder()")
         mediaRecorder = MediaRecorder().apply {
             setAudioSource(AudioSource.MIC)
+
             setVideoSource(VideoSource.SURFACE)
             setOutputFormat(options.storage.outputFormat)
             setAudioEncoder(AudioEncoder.HE_AAC)
@@ -124,6 +125,8 @@ class RecorderService : Service() {
                 setVideoEncoder(videoEncoder)
                 setVideoEncodingBitRate(bitrate)
                 setVideoFrameRate(frameRate)
+                setAudioSamplingRate(audio_sample_rate)
+                setAudioEncodingBitRate(audio_bitrate)
                 if (maxLengthSecs > 0) {
                     setMaxDuration(maxLengthSecs * 1000)
                 }
