@@ -1,25 +1,12 @@
 apply from: "$rootProject.projectDir/android-library.gradle"
 
-apply plugin: "org.jetbrains.dokka"
 apply plugin: "com.vanniktech.maven.publish"
 
 android {
     namespace 'dev.bmcreations.scrcast.lifecycle'
 }
 
-afterEvaluate {
-    dokka {
-        outputDirectory = "$rootDir/docs/api"
-        outputFormat = "gfm"
-        configuration {
-            includeNonPublic = false
-            reportUndocumented = true
-            jdkVersion = 8
-            skipDeprecated = true
-            skipEmptyPackages = true
-        }
-    }
-}
+
 
 dependencies {
     implementation(project(":library"))
