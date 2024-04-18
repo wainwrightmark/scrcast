@@ -52,7 +52,7 @@ abstract class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-
+/*
         pause_fab.hide()
         pause_fab.setOnClickListener {
             if (recorder.state.isPaused) {
@@ -69,12 +69,14 @@ abstract class MainActivity : AppCompatActivity() {
                 recorder.record()
             }
         }
+        */
+
     }
 
     override fun onResume() {
         super.onResume()
         recorder.onRecordingComplete { file ->
-            Snackbar.make(bottom_bar, "Recording located at ${file.absolutePath}", Snackbar.LENGTH_SHORT).show()
+            //Snackbar.make(bottom_bar, "Recording located at ${file.absolutePath}", Snackbar.LENGTH_SHORT).show()
         }
     }
 
@@ -85,6 +87,7 @@ abstract class MainActivity : AppCompatActivity() {
 
     protected fun handleRecorderState(state: RecordingState) {
         Log.d("sample", "state change: state = $state")
+        /*
         fab.reflectState(state)
 
         start_timer.isVisible = state.isInStartDelay
@@ -113,5 +116,6 @@ abstract class MainActivity : AppCompatActivity() {
                 pause_fab.text = "Resume"
             }
         }
+        */
     }
 }
