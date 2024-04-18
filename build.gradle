@@ -16,6 +16,13 @@ buildscript {
     }
 }
 
+android {
+    ...
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
 allprojects {
     repositories {
         google()
