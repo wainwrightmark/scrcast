@@ -3,6 +3,10 @@ apply from: "$rootProject.projectDir/android-library.gradle"
 apply plugin: "org.jetbrains.dokka"
 apply plugin: "com.vanniktech.maven.publish"
 
+android {
+    namespace 'dev.bmcreations.scrcast'
+}
+
 afterEvaluate {
     dokka {
         outputDirectory = "$rootDir/docs/api"
