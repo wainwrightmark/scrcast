@@ -12,7 +12,6 @@ import dev.bmcreations.scrcast.ScrCast
 import dev.bmcreations.scrcast.app.R
 import dev.bmcreations.scrcast.extensions.supportsPauseResume
 import dev.bmcreations.scrcast.recorder.RecordingState
-import kotlinx.android.synthetic.main.activity_main.*
 
 
 abstract class MainActivity : AppCompatActivity() {
@@ -51,6 +50,8 @@ abstract class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
 
         pause_fab.hide()
         pause_fab.setOnClickListener {

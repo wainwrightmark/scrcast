@@ -14,7 +14,8 @@ import android.util.Log
 import androidx.annotation.ColorInt
 import androidx.annotation.ColorRes
 import dev.bmcreations.scrcast.R
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
+
 import kotlinx.android.parcel.RawValue
 import kotlin.jvm.functions.FunctionN
 import java.io.File

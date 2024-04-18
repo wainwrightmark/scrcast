@@ -12,8 +12,8 @@ ext.deps = [:]
 def deps = [:]
 
 def versions = [:]
-versions.plugin_build_tools = '4.2.2'
-versions.kotlin = '1.4.21'
+versions.plugin_build_tools = '8.3.0'
+versions.kotlin = '1.6.21'
 versions.kotlinx_coroutines = '1.4.1'
 versions.plugin_androidx_navigation_safe_args = '2.2.0-rc03'
 versions.plugin_dokka = '0.10.1'

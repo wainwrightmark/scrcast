@@ -125,8 +125,8 @@ class RecorderService : Service() {
                 setVideoEncoder(videoEncoder)
                 setVideoEncodingBitRate(bitrate)
                 setVideoFrameRate(frameRate)
-                setAudioSamplingRate(audio_sample_rate)
-                setAudioEncodingBitRate(audio_bitrate)
+                setAudioSamplingRate(audioSampleRate)
+                setAudioEncodingBitRate(audioBitrate)
                 if (maxLengthSecs > 0) {
                     setMaxDuration(maxLengthSecs * 1000)
                 }
